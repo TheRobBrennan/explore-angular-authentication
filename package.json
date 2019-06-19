@@ -4,6 +4,9 @@
   "description": "A simple project to explore authentication with Angular",
   "main": "index.js",
   "scripts": {
+    "start": "npm run start:server & npm run start:client",
+    "start:client": "cd ./src/app && npm run start",
+    "start:server": "cd ./src/server && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
