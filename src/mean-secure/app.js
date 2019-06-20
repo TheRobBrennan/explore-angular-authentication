@@ -24,6 +24,8 @@ app.use(bodyParser.urlencoded({ extended: 'false' }))
 app.use(express.static(path.join(__dirname, 'dist')))
 app.use(passport.initialize())
 app.use('/', express.static(path.join(__dirname, 'dist', 'mean-secure')))
+app.use('/login', express.static(path.join(__dirname, 'dist', 'mean-secure')))
+app.use('/books', express.static(path.join(__dirname, 'dist', 'mean-secure')))
 app.use('/api', api)
 
 // catch 404 and forward to error handler
