@@ -8,7 +8,6 @@ services:
     container_name: 'angular-auth-mean-secure'
     ports:
       - "3000:3000"
-    # Automatically hot reload code changes in the Docker container
     volumes:
       - ./src/mean-secure:/usr/src
     depends_on:
