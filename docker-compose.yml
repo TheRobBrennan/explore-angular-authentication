@@ -1,6 +1,19 @@
 version: '3'
 
 services:
+  'angular-auth-mean-secure':
+    build:
+      context: ./src/mean-secure
+      dockerfile: ./Dockerfile
+    container_name: 'angular-auth-mean-secure'
+    ports:
+      - "3000:3000"
+    # Automatically hot reload code changes in the Docker container
+    volumes:
+      - ./src/mean-secure:/usr/src
+    depends_on:
+      - mongodb
+
   # 'angular-auth-app':
   #   build:
   #     context: ./src/app
