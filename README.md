@@ -30,4 +30,4 @@ If you would like to restart this demo, there are two key scripts that you will 
 ## Resources
 
 If you would like to see how to setup local authentication using the MEAN stack, I would suggest reading
-[Securing MEAN Stack (Angular 5) Web Application using Passport](https://www.djamware.com/post/5a878b3c80aca7059c142979/securing-mean-stack-angular-5-web-application-using-passport)
+[Securing MEAN Stack (Angular 5) Web Application using Passport](https://www.djamware.com/post/5a878b3c80aca7059c142979/securing-mean-stack-angular-5-web-application-using-passport) - with a corresponding [repo](https://github.com/didinj/mean-angular5-passport-authentication) available at [https://github.com/didinj/mean-angular5-passport-authentication](https://github.com/didinj/mean-angular5-passport-authentication)
