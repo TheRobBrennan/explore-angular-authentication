@@ -26,3 +26,8 @@ If you would like to restart this demo, there are two key scripts that you will 
 
 + `docker:refresh` - Stops and restarts the services in `docker-compose.yml`
 + `docker:refresh:clean` - This stops any running containers identified in `docker-compose.yml`, builds new images and containers based off the latest Docker files, and then starts up all of the services identified in `docker-compose.yml`
+
+## Resources
+
+If you would like to see how to setup local authentication using the MEAN stack, I would suggest reading
+[Securing MEAN Stack (Angular 5) Web Application using Passport](https://www.djamware.com/post/5a878b3c80aca7059c142979/securing-mean-stack-angular-5-web-application-using-passport)
