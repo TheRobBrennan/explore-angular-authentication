@@ -4,6 +4,17 @@ var favicon = require('serve-favicon')
 var logger = require('morgan')
 var bodyParser = require('body-parser')
 
+var morgan = require('morgan')
+var mongoose = require('mongoose')
+var passport = require('passport')
+var config = require('./config/database')
+
+mongoose.Promise = require('bluebird')
+mongoose
+  .connect(config.database, { promiseLibrary: require('bluebird') })
+  .then(() => console.log('connection succesful'))
+  .catch(err => console.error(err))
+
 var api = require('./routes/api')
 var app = express()
 
@@ -11,6 +22,7 @@ app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: 'false' }))
 app.use(express.static(path.join(__dirname, 'dist')))
+app.use(passport.initialize())
 app.use('/', express.static(path.join(__dirname, 'dist', 'mean-secure')))
 app.use('/api', api)
 
